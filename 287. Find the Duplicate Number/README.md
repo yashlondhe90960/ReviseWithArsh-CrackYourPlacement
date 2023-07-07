@@ -1,4 +1,4 @@
-# Combination Sum III
+# Find the Duplicate Number
 
 ## Description
 
