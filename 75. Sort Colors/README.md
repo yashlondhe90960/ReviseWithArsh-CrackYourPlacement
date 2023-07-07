@@ -1,4 +1,4 @@
-# Combination Sum III
+# Sort Colors
 
 ## Description
 
