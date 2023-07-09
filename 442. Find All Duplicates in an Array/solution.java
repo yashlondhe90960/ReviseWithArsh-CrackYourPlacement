@@ -9,32 +9,25 @@ import java.util.*;
 
 
 class Solution {
-    public List<Integer> findDuplicates(int[] arr) {
-        int i = 0;
-        while(i < arr.length){
-            int correct = arr[i] - 1;
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> resultSet = new ArrayList<>();
 
-            if( arr[i] != arr[correct]) {
-                swap(arr, i, correct);
-            } else {
-                i++;
+        for(int i=0;i<nums.length;i++){
+             // get the index
+             int index = Math.abs(nums[i]) -1;
 
+             //if the number is already -ve we are encountering it twice
 
-            }
+             if(nums[index] < 0){
+                 resultSet.add(index+1);
+
+             }
+
+             //Flip the number at the index to negative
+             nums[index] = nums[index]*-1;
+
         }
-        List<Integer> ans = new ArrayList<>();
-        for(int index = 0; index< arr.length; index++){
-            if(arr[index] != index + 1){
-                ans.add(index);
-
-            }
-        }
-        return ans;
-
-}
-    void swap(int[] arr, int first, int second){
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
+        return resultSet;
+        
     }
 }
