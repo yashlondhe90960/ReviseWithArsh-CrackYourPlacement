@@ -1,4 +1,4 @@
-# Chocolate distribution problem 
+# Maximum Points You Can Obtain from Cards
 
 ## Description
 
