@@ -28,3 +28,4 @@ Input : arr[] = {12, 4, 7, 9, 2, 23, 25, 41, 30, 40, 28, 42, 30, 44, 48, 43, 50}
 Output: Minimum Difference is 10 
 ```
 
+# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
