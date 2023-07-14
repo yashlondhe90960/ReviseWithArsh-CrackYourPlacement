@@ -21,4 +21,4 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2
 ```
 
-# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+<!-- # ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg) -->

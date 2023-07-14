@@ -20,4 +20,4 @@ Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 ```
 
-# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+<!-- # ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg) -->

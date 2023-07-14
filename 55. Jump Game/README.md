@@ -23,4 +23,4 @@ Output: false
 Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
 ```
 
-# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+<!-- # ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg) -->

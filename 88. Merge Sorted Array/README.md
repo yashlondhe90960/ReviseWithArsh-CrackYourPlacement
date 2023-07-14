@@ -39,4 +39,4 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 ```
 
-# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+<!-- # ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg) -->

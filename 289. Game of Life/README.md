@@ -28,4 +28,4 @@ Input: board = [[1,1],[1,0]]
 Output: [[1,1],[1,1]]
 ```
 
-# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+<!-- # ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg) -->

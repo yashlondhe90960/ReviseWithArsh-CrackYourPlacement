@@ -31,4 +31,4 @@ Explanation: The reverse pairs are:
 (3, 4) --> nums[3] = 5, nums[4] = 1, 5 > 2 * 1
 ```
 
-# ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+<!-- # ![Alt](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg) -->
