@@ -5,8 +5,6 @@ import java.util.Arrays;
  
 */
 
-
-
 public class MinCostToEqualizeArray {
     public static int minCostOptimized(int[] arr) {
         Arrays.sort(arr);
