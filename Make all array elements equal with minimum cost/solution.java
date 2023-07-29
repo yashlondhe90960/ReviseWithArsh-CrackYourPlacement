@@ -6,70 +6,30 @@ import java.util.Arrays;
 */
 
 
-class Solution
-{
-    // Utility method to compute cost, when
-    // all values of array are made equal to X
-    public static int computeCost(int arr[], int N,
-                                  int X)
-    {
-        int cost = 0;
-        for (int i = 0; i < N; i++)
-            cost += Math.abs(arr[i] - X);
-        return cost;
-    }
- 
-    // Method to find minimum cost to make all
-    // elements equal
-    public static int minCostToMakeElementEqual(int arr[],
-                                                int N)
-    {
-        int low, high;
-        low = high = arr[0];
- 
-        // setting limits for ternary search by
-        // smallest and largest element
-        for (int i = 0; i < N; i++) {
-            if (low > arr[i])
-                low = arr[i];
-            if (high < arr[i])
-                high = arr[i];
+import java.util.Arrays;
+
+public class MinCostToEqualizeArray {
+    public static int minCostOptimized(int[] arr) {
+        Arrays.sort(arr);
+        int n = arr.length;
+        int median1 = arr[n / 2];
+        int median2 = arr[n / 2 - 1];
+
+        // Calculate total cost for both medians and choose the minimum cost
+        int cost1 = 0, cost2 = 0;
+        for (int i = 0; i < n; i++) {
+            cost1 += Math.abs(arr[i] - median1);
+            cost2 += Math.abs(arr[i] - median2);
         }
- 
-        /* loop until difference between low and high
-           become less than 3, because after that
-           mid1 and mid2 will start repeating
-        */
-        while ((high - low) > 2) {
-            // mid1 and mid2 are representative array
-            // equal values of search space
-            int mid1 = low + (high - low) / 3;
-            int mid2 = high - (high - low) / 3;
- 
-            int cost1 = computeCost(arr, N, mid1);
-            int cost2 = computeCost(arr, N, mid2);
- 
-            // if mid2 point gives more total cost,
-            // skip third part
-            if (cost1 < cost2)
-                high = mid2;
- 
-            // if mid1 point gives more total cost,
-            // skip first part
-            else
-                low = mid1;
-        }
- 
-        // computeCost gets optimum cost by sending
-        // average of low and high as X
-        return computeCost(arr, N, (low + high) / 2);
+
+        return Math.min(cost1, cost2);
     }
- 
-    /* Driver program to test above function */
-    public static void main(String[] args)
-    {
-        int arr[] = { 1, 100, 101 };
-        int N = arr.length;
-        System.out.println(minCostToMakeElementEqual(arr, N));
+
+    public static void main(String[] args) {
+        int[] arr1 = {1, 100, 101};
+        System.out.println(minCostOptimized(arr1)); // Output: 100
+
+        int[] arr2 = {4, 6};
+        System.out.println(minCostOptimized(arr2)); // Output: 2
     }
 }
