@@ -6,7 +6,6 @@ import java.util.Arrays;
 */
 
 
-import java.util.Arrays;
 
 public class MinCostToEqualizeArray {
     public static int minCostOptimized(int[] arr) {
