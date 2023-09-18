@@ -6,7 +6,7 @@ You are given a doubly linked list, which contains nodes that have a next pointe
 
 Given the head of the first level of the list, flatten the list so that all the nodes appear in a single-level, doubly linked list. Let curr be a node with a child list. The nodes in the child list should appear after curr and before curr.next in the flattened list.
 
-Return the head of the flattened list. The nodes in the list must have all of their child pointers set to null.
+Return the head of the flattened list. 
  
 Example 1:
 
